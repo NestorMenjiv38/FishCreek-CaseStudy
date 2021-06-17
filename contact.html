@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Fish Creek Animal Clinic</title>
+<title>Fish Creek Animal Clinic: Contact</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="fishcreek.css" rel="stylesheet">
@@ -20,34 +20,30 @@
 </ul>
 </nav>
 <main>
-<h2>Professional, Compassionate Care for Your Pet</h2>
-<p>The caring doctors and staff at Fish Creek Animal Clinic understand the special bond 
-you share with your cherished pet.</p>
-<div id="flow">
-<section>
-<h3>Years of Experience</h3>
-<p>Fish Creek Veterinarians have provided personalized and compassionate care since 1984.</p> 
-</section>
-<section>
-<h3>Open Door Policy</h3>
-<p>We welcome owners to stay with their pets during any medical procedure.</p>
-</section>
-<section>
-<h3>Always Available</h3>
-<p>Our professionals are on duty 24 hours a day, 7 days a week.</p>
-</section>
-</div>
-<div class="address">
-Fish Creek Animal Clinic<br>
-<a id="mobile" href="tel:888-555-5555">888-555-5555</a><span id="desktop">888-555-
-5555</span><br>
-12456 Grassy Lane<br>
-Fish Creek, WI 55534<br><br>
-</div>
+<h2>Contact Fish Creek</h2>
+<p>Fill out the form below to contact Fish Creek. All information is required. </p>
+<form method="post" action="https://webdevbasics.net/scripts/fishcreek.php">
+<label for="myName">Name: </label>
+<input type="text" id="myName" name="myName" required>
+<label for="myEmail">E-mail: </label>
+<input type="email" id="myEmail" name="myEmail" required>
+<label for="myReason">Reason for Contact: </label>
+<input type="text" id="myReason" name="myReason" list="reasons" required>
+<datalist id="reasons">
+<option>New Patient</option>
+<option>Appointment</option>
+<option>House Call</option>
+<option>Information</option>
+<option>Ask the Vet</option>
+</datalist>
+<label for="myComments">Comments: </label>
+<textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+<input type="submit" id="mySubmit" value="Send Now">
+</form>
 </main>
 <footer>
 Copyright &copy; 2020 Fish Creek Animal Clinic<br>
-<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+<a href="yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
 </footer>
 </div>
 </body>
